@@ -1,12 +1,16 @@
 <template>
     <div>
-        <h2>Main Layout</h2>
+        <Header />
         <slot name="content">Default content main</slot>
     </div>
 </template>
 
 <script>
-export default {};
+export default {
+    components: {
+        Header: () => import("@/js/components/Header"),
+    },
+};
 </script>
 
 <style></style>
