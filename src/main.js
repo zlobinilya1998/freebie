@@ -1,6 +1,6 @@
 import Vue from "vue";
-import App from "./App.vue";
-import { OhVueIcon, Toast, Ripple, AOS } from "./js/plugins/index";
+import App from "@/App.vue";
+import { OhVueIcon, Toast, Ripple, AOS } from "@/js/plugins/index";
 import router from "@/js/router/index.js";
 
 Vue.config.productionTip = false;

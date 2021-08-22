@@ -15,4 +15,11 @@
     max-width: 1200px;
     margin: 0 auto;
 }
+.fade-enter-active,
+.fade-leave-active {
+    transition: all 0.5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active до версии 2.1.8 */ {
+    opacity: 0;
+}
 </style>

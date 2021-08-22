@@ -8,7 +8,7 @@
 <script>
 export default {
     components: {
-        Header: () => import("@/js/components/Header"),
+        Header: () => import("@/js/components/Header/Header"),
     },
 };
 </script>
