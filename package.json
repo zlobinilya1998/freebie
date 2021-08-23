@@ -8,9 +8,11 @@
   },
   "dependencies": {
     "aos": "^2.3.4",
+    "axios": "^0.21.1",
     "core-js": "^3.6.5",
     "oh-vue-icons": "^0.4.7",
     "vue": "^2.6.11",
+    "vue-axios": "^3.2.5",
     "vue-ripple-directive": "^2.0.1",
     "vue-router": "^3.2.0",
     "vue-toastification": "^1.7.11"
