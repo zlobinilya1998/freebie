@@ -206,7 +206,8 @@
       </section>
       <section class="py-24 slider">
         <div class="container">
-          <Slider />
+          <Slider>
+          </Slider>
         </div>
       </section>
       <section class="py-12 md:py-24 questions">
