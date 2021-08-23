@@ -1,5 +1,5 @@
 <template>
-    <div class="mt-14 w-2/3 mx-auto">
+    <div class="mt-14 px-4 md:w-2/3 mx-auto">
         <slot></slot>
     </div>
 </template>

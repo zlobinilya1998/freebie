@@ -178,7 +178,7 @@
           </div>
         </div>
       </section>
-      <section class="flex flex-col md:flex-row">
+      <section class="hidden md:flex flex-col md:flex-row">
         <div
           class="md:w-1/2 bg-indigo-400 py-8 md:py-16 md:pr-20 flex flex-col items-end text-blue-100"
           data-aos="fade-right"
@@ -204,7 +204,7 @@
           </div>
         </div>
       </section>
-      <section class="py-24 slider">
+      <section class="hidden md:block py-24 slider">
         <div class="container">
           <Slider>
           </Slider>
@@ -375,33 +375,33 @@ export default {
 
 <style scoped lang="scss">
 .plan {
-  background: right top url("../../assets/background/plan/wave.png") no-repeat,
+  background: right top url("../../../assets/background/plan/wave.png") no-repeat,
     linear-gradient(180deg, #f4f7ff 0%, #f1f5ff 100%);
   background-size: cover;
   background-attachment: fixed;
 }
 .productivity {
   background: left center
-      url("../../assets/background/productivity/Ellipse.png") no-repeat,
-    right top url("../../assets/background/productivity/Group 82.png") no-repeat,
-    right 20% bottom url("../../assets/background/productivity/Group.png")
+      url("../../../assets/background/productivity/Ellipse.png") no-repeat,
+    right top url("../../../assets/background/productivity/Group 82.png") no-repeat,
+    right 20% bottom url("../../../assets/background/productivity/Group.png")
       no-repeat,
-    left 20% bottom 20% url("../../assets/background/productivity/Group 83.png")
+    left 20% bottom 20% url("../../../assets/background/productivity/Group 83.png")
       no-repeat,
-    right bottom 15% url("../../assets/background/productivity/Ellipse2.png")
+    right bottom 15% url("../../../assets/background/productivity/Ellipse2.png")
       no-repeat,
-    left 15% top 20% url("../../assets/background/productivity/Ellipse1.png")
+    left 15% top 20% url("../../../assets/background/productivity/Ellipse1.png")
       no-repeat,
     #f5f8ff;
 }
 .about {
-  background: left top url("../../assets/background/about/Group81.png")
+  background: left top url("../../../assets/background/about/Group81.png")
       no-repeat,
-    right top url("../../assets/background/about/Group80.png") no-repeat,
-    left bottom url("../../assets/background/about/Frame1.png") no-repeat;
+    right top url("../../../assets/background/about/Group80.png") no-repeat,
+    left bottom url("../../../assets/background/about/Frame1.png") no-repeat;
 }
 .questions {
-  background: right bottom url("../../assets/background/questions/clouds.png")
+  background: right bottom url("../../../assets/background/questions/clouds.png")
     no-repeat;
   background-size: contain;
 }
@@ -409,9 +409,9 @@ export default {
     background: #F5F8FF;
 }
 .getStarted {
-  background: left center url("../../assets/background/getStarted/Group28.png")
+  background: left center url("../../../assets/background/getStarted/Group28.png")
       no-repeat,
-    right bottom url("../../assets/background/getStarted/Group29.png") no-repeat,
+    right bottom url("../../../assets/background/getStarted/Group29.png") no-repeat,
     linear-gradient(229.32deg, #6888ff 12.77%, #5e80ff 73.11%);
 }
 </style>

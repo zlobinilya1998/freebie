@@ -1,7 +1,7 @@
 <template>
   <header class="w-full bg-white fixed md:relative flex justify-end md:justify-between items-center p-2 md:p-4 z-10">
-    <div class="hidden md:block w-6/12">
-      <ul class="flex justify-evenly">
+    <div class="hidden md:block">
+      <ul class="flex space-x-4">
         <div v-for="item in leftMenu" :key="item.text">
           <router-link
             :to="item.link"
@@ -11,8 +11,8 @@
         </div>
       </ul>
     </div>
-    <div class="hidden md:block w-2/12">
-      <ul class="flex justify-evenly">
+    <div class="hidden md:block">
+      <ul class="flex space-x-4">
         <router-link :to="item.link" v-for="item in rightMenu" :key="item.icon">
           <v-icon
             :name="item.icon"
@@ -27,7 +27,7 @@
     </div>
     <transition name="fade">
       <div class="fixed top-16 p-4 bg-indigo-200 rounded-md flex flex-col space-y-4" v-if="navOpen">
-        <router-link v-for="link in leftMenu" :to="link.link" :key="link.text" class="hover:text-indigo-500 transition">{{link.text}}</router-link>
+        <router-link v-for="link in leftMenu" :to="link.link" exact-path :key="link.text" class="hover:text-indigo-500 transition">{{link.text}}</router-link>
       </div>
     </transition>
   </header>
@@ -38,7 +38,7 @@ export default {
   data: () => ({
     navOpen:false,
     leftMenu: [
-      { text: "Home", link: "/", icon: "fa-home" },
+      { text: "Home", link: "/home", icon: "fa-home" },
       { text: "Blog", link: "/blog", icon: "fa-th-large" },
       { text: "Features", link: "/features", icon: "fa-angellist" },
       { text: "Pricing", link: "/pricing", icon: "fa-dollar-sign" },
@@ -54,4 +54,9 @@ export default {
 };
 </script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="postcss">
+  .router-link-active {
+    color: #6366F1;
+    font-weight: bolder;
+  }
+</style>
