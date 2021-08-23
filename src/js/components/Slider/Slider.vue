@@ -1,18 +1,23 @@
 <template>
   <div>
     <div class="flex items-center justify-between space-x-8">
-      <div @click="prevSlide">
+      <div
+        @click="prevSlide"
+        class="text-gray-500 hover:text-indigo-500 cursor-pointer transition"
+      >
         <v-icon name="fa-arrow-left" scale="2" />
       </div>
       <transition name="slide" appear mode="out-in">
         <div
           class="h-96 bg-white flex-1 rounded-md p-4 shadow"
           :key="currentSlide"
-        >
-          {{ displayedSlide }}
-        </div>
+          v-html="currentSlide"
+        />
       </transition>
-      <div @click="nextSlide">
+      <div
+        @click="nextSlide"
+        class="text-gray-500 hover:text-indigo-500 cursor-pointer transition"
+      >
         <v-icon name="fa-arrow-right" scale="2" />
       </div>
     </div>
@@ -22,11 +27,7 @@
         class="text-gray-400"
         :class="{ 'text-indigo-500': index + 1 === currentSlide }"
       >
-        <v-icon
-          :key="item"
-          name="fa-circle"
-          scale=".75"
-        />
+        <v-icon :key="item" name="fa-circle" scale=".75" />
       </div>
     </div>
   </div>
@@ -36,7 +37,9 @@
 export default {
   data: () => ({
     currentSlide: 1,
-    slides: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    slides: [
+      1,2,3
+    ]
   }),
   computed: {
     displayedSlide() {
