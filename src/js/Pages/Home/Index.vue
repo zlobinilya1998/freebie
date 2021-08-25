@@ -2,7 +2,7 @@
   <main-layout>
     <template #content>
       <section
-        class="productivity text-center py-24 md:py-32 border-b-2 border-t-2 border-indigo-500"
+        class="productivity text-center py-24 md:py-32 border-b-2 border-indigo-500"
       >
         <p class="text-sm text-indigo-800 font-bold" data-aos="fade-right">
           PLAN YOUR LIFE
@@ -227,7 +227,7 @@
           </Accordion>
         </div>
       </section>
-      <section class="py-12 md:py-24 getStarted">
+      <section class="pt-12 md:pt-24 getStarted">
         <div class="container text-center px-4 md:px-0">
           <p class="text-white text-md font-bold">PLAN YOUR LIFE</p>
           <h3 class="mt-6 text-white text-4xl" data-aos="fade-down">
@@ -256,7 +256,17 @@
             </button>
           </div>
         </div>
+
       </section>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <defs>
+          <linearGradient id="Gradient1" gradientTransform="rotate(229.32)">
+            <stop offset="12.77%" stop-color="#6888ff"/>
+            <stop offset="73.11%" stop-color="#5e80ff"/>
+          </linearGradient>
+        </defs>
+        <path fill="url(#Gradient1)" fill-opacity="1" d="M0,224L48,213.3C96,203,192,181,288,197.3C384,213,480,267,576,272C672,277,768,235,864,229.3C960,224,1056,256,1152,277.3C1248,299,1344,309,1392,314.7L1440,320L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+      </svg>
       <section class="py-12 md:py-24">
         <div
           class="container flex flex-col md:flex-row justify-center items-center border-b-2 px-4 md:px-0 pb-8"
@@ -401,9 +411,7 @@ export default {
     left bottom url("../../../assets/background/about/Frame1.png") no-repeat;
 }
 .questions {
-  background: right bottom url("../../../assets/background/questions/clouds.png")
-    no-repeat;
-  background-size: contain;
+  background: #f5f8ff;
 }
 .slider {
     background: #F5F8FF;
@@ -412,6 +420,6 @@ export default {
   background: left center url("../../../assets/background/getStarted/Group28.png")
       no-repeat,
     right bottom url("../../../assets/background/getStarted/Group29.png") no-repeat,
-    linear-gradient(229.32deg, #6888ff 12.77%, #5e80ff 73.11%);
+    linear-gradient(3deg,#6888ff 12.77%, #5e80ff 73.11%);
 }
 </style>

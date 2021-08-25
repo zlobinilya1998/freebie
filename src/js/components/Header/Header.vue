@@ -1,5 +1,5 @@
 <template>
-  <header class="w-full bg-white fixed md:relative flex justify-end md:justify-between items-center p-2 md:p-4 z-10">
+  <header class="w-full bg-white fixed md:relative flex justify-end md:justify-between items-center p-2 md:p-4 z-10 border-b-2 border-indigo-500">
     <div class="hidden md:block">
       <ul class="flex space-x-4">
         <div v-for="item in leftMenu" :key="item.text">
@@ -26,7 +26,7 @@
       <v-icon name="fa-bars"/>
     </div>
     <transition name="fade">
-      <div class="fixed top-16 p-4 bg-indigo-200 rounded-md flex flex-col space-y-4" v-if="navOpen">
+      <div class="fixed top-16 p-4 bg-indigo-200 rounded-md flex flex-col space-y-4 border-2 border-indigo-500" v-if="navOpen">
         <router-link v-for="link in leftMenu" :to="link.link" exact-path :key="link.text" class="hover:text-indigo-500 transition">{{link.text}}</router-link>
       </div>
     </transition>

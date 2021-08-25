@@ -14,7 +14,7 @@
             >
                 <v-icon name="fa-chevron-down" />
             </span>
-            <p class="text-xl font-medium">
+            <p class="text-xl font-medium text-left">
                 <slot name="title">Default title</slot>
             </p>
         </div>
@@ -25,7 +25,7 @@
             @before-leave="start"
             @after-leave="end"
         >
-            <div v-if="visible" class="pl-16 text-left text-gray-500 font-medium">
+            <div v-if="visible" class="md:pl-16 text-gray-500 font-medium text-justify">
                 <slot name="content">Content</slot>
             </div>
         </transition>
