@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Header />
+        <Header/>
         <slot name="content">Default content main</slot>
     </div>
 </template>
@@ -13,4 +13,3 @@ export default {
 };
 </script>
 
-<style></style>

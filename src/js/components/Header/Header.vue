@@ -1,5 +1,5 @@
 <template>
-  <header class="w-full bg-white fixed md:relative flex justify-end md:justify-between items-center p-2 md:p-4 z-10 border-b-2 border-indigo-500">
+  <header class="w-full fixed md:relative flex justify-end md:justify-between items-center p-2 md:p-4 z-10 border-b-2 border-indigo-500 header">
     <div class="hidden md:block">
       <ul class="flex space-x-4">
         <div v-for="item in leftMenu" :key="item.text">
@@ -9,17 +9,6 @@
             >{{ item.text }}</router-link
           >
         </div>
-      </ul>
-    </div>
-    <div class="hidden md:block">
-      <ul class="flex space-x-4">
-        <router-link :to="item.link" v-for="item in rightMenu" :key="item.icon">
-          <v-icon
-            :name="item.icon"
-            scale="1.2"
-            class="text-gray-600 hover:text-blue-500 transition"
-          />
-        </router-link>
       </ul>
     </div>
     <div class="md:hidden self-end cursor-pointer hover:text-indigo-500 transition hover:bg-indigo-200 p-2 rounded-md transition" :class="{'text-indigo-500 bg-indigo-200':navOpen}" @click="navOpen = !navOpen">
@@ -44,17 +33,15 @@ export default {
       { text: "Pricing", link: "/pricing", icon: "fa-dollar-sign" },
       { text: "Documentation", link: "/documentation", icon: "fa-file" }
     ],
-    rightMenu: [
-      { link: "/", icon: "fa-facebook-f" },
-      { link: "/", icon: "fa-telegram-plane" },
-      { link: "/", icon: "fa-twitter" },
-      { link: "/", icon: "fa-twitch" }
-    ]
+
   })
 };
 </script>
 
-<style scoped lang="postcss">
+<style scoped>
+  .header {
+    background: aliceblue;
+  }
   .router-link-active {
     color: #6366F1;
     font-weight: bolder;

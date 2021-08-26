@@ -204,12 +204,15 @@
           </div>
         </div>
       </section>
-      <section class="hidden md:block py-24 slider">
+      <section class="hidden md:block pt-24 slider">
         <div class="container">
           <Slider>
           </Slider>
         </div>
       </section>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style="background:#F5F8FF">
+        <path fill="white" fill-opacity="1" d="M0,288L120,288C240,288,480,288,720,282.7C960,277,1200,267,1320,261.3L1440,256L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
+      </svg>
       <section class="py-12 md:py-24 questions">
         <div class="container text-center">
           <p class="text-sm text-indigo-500 text-xl">Customer help</p>
@@ -256,7 +259,6 @@
             </button>
           </div>
         </div>
-
       </section>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <defs>
@@ -269,7 +271,7 @@
       </svg>
       <section class="py-12 md:py-24">
         <div
-          class="container flex flex-col md:flex-row justify-center items-center border-b-2 px-4 md:px-0 pb-8"
+          class="container flex flex-col md:flex-row justify-center items-center px-4 md:px-0 pb-8"
         >
           <div class=" md:w-1/3">
             <p class="text-indigo-600 font-bold text-2xl">
@@ -301,6 +303,7 @@
           </div>
         </div>
       </section>
+      <Footer/>
     </template>
   </main-layout>
 </template>
@@ -356,13 +359,16 @@ export default {
         text:
           "Well, the answer is actually no - rather than generating fancy fonts, this converter creates fancy symbols. The explanation starts with unicode; an industry standard which creates the specification for thousands of different symbols and characters. All the characters that you see on your electronic devices, and printed in books, are likely specified by the unicode standard."
       }
-    ]
+    ],
   }),
   components: {
     MainLayout: () => import("@/js/Layouts/MainLayout"),
     Accordion: () => import("@/js/components/Accordion/Index"),
     AccordionItem: () => import("@/js/components/Accordion/Item"),
-    Slider: () => import("@/js/components/Slider/Slider")
+    Slider: () => import("@/js/components/Slider/Slider"),
+    Navigation: () => import("@/js/components/Navigation/Index"),
+    Footer: () => import("@/js/components/Footer/Index"),
+
   },
   methods: {
     sendOnEmail() {
@@ -411,7 +417,6 @@ export default {
     left bottom url("../../../assets/background/about/Frame1.png") no-repeat;
 }
 .questions {
-  background: #f5f8ff;
 }
 .slider {
     background: #F5F8FF;
